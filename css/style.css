@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  color: rgb(28, 28, 28);
+}
+
+:root {
+  --primary-color: indigo;
+  --accent-color: orange;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: url("/img/ocean.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  backdrop-filter: blur(5px);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  /* background-color: tomato; */
+}
+
+.container {
+  max-width: 40rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.733);
+  height: max-content;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  gap: 2rem;
+}
+
+.section-title {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: rgb(24, 14, 88);
+}
+
+.my-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.my-profile .my-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-profile .my-photo {
+  width: 100px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.my-profile .my-bio {
+  max-width: 20rem;
+  text-align: center;
+}
+
+.my-profile .social-media {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.my-profile .social-media a {
+  text-decoration: none;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: all 300ms;
+}
+
+.my-profile .social-media a:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 4px 10px rgba(33, 13, 115, 0.137);
+}
+
+.my-profile .social-media a:hover i {
+  color: var(--accent-color);
+}
+
+.my-profile .social-media a i {
+  font-size: 32px;
+  color: var(--primary-color);
+  transition: all 300ms;
+}
+
+.my-links {
+  width: 100%;
+}
+
+.my-links a {
+  text-decoration: none;
+}
+
+.my-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.my-links ul li.link-item {
+  background-color: white;
+  border-radius: 10px;
+  list-style: none;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: box-shadow 300ms;
+  border: 2px solid white;
+}
+
+.my-links ul li.link-item:hover {
+  box-shadow: 4px 4px 10px rgba(33, 13, 115, 0.137);
+  border: 2px solid var(--primary-color);
+}
+
+.my-links ul li.link-item .icon {
+  font-size: 24px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+}
+
+.my-links ul li.link-item .icon i {
+  color: var(--primary-color);
+}
+
+.my-links ul li.link-item:hover .icon i {
+  color: var(--accent-color);
+}
+
+.my-links ul li.link-item .title {
+  flex-grow: 1;
+}
