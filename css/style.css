@@ -75,6 +75,8 @@ body {
 .my-profile .social-media {
   display: flex;
   gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .my-profile .social-media a {
@@ -150,4 +152,16 @@ body {
 
 .my-links ul li.link-item .title {
   flex-grow: 1;
+}
+
+/* Smartphones */
+
+@media screen and (max-width: 30em) {
+  .container {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .my-profile .social-media a i {
+    font-size: 16px;
+  }
 }
